@@ -1,4 +1,0 @@
-(executable
- (public_name UniDatabase)
- (name main)
- (libraries UniDatabase))

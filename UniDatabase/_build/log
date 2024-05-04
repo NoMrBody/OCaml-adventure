@@ -1,6 +1,0 @@
-# dune init project UniDatabase
-# OCAMLPARAM: unset
-# Shared cache: disabled
-# Shared cache location: /home/th3g3ntl3man/.cache/dune/db
-# Workspace root: /home/th3g3ntl3man/Documents/ocaml/assignments/UniDatabase
-# Auto-detected concurrency: 8
