@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/PeanoArithmetic/META"
+  "_build/install/default/lib/PeanoArithmetic/dune-package"
+  "_build/install/default/lib/PeanoArithmetic/opam"
+]
+bin: [
+  "_build/install/default/bin/PeanoArithmetic"
+]

@@ -1,0 +1,36 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/th3g3ntl3man/.cache/dune/db
+# Workspace root:
+# /home/th3g3ntl3man/Documents/ocaml/OCaml-advanture/assignments/PeanoArithmetic
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/th3g3ntl3man/Documents/ocaml/OCaml-advanture/assignments/PeanoArithmetic/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_8b916d_output
+# Promoting "_build/default/PeanoArithmetic.opam" to "PeanoArithmetic.opam"
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.PeanoArithmetic.objs/byte -no-alias-deps -opaque -o lib/.PeanoArithmetic.objs/byte/peanoArithmetic.cmo -c -impl lib/peanoArithmetic.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_PeanoArithmetic.eobjs/byte -no-alias-deps -opaque -o test/.test_PeanoArithmetic.eobjs/byte/dune__exe__Test_PeanoArithmetic.cmi -c -intf test/test_PeanoArithmetic.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/PeanoArithmetic.cma lib/.PeanoArithmetic.objs/byte/peanoArithmetic.cmo)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.PeanoArithmetic.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.PeanoArithmetic.objs/byte -I lib/.PeanoArithmetic.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.PeanoArithmetic.objs/native/peanoArithmetic.cmx -c -impl lib/peanoArithmetic.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_PeanoArithmetic.eobjs/byte -I test/.test_PeanoArithmetic.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_PeanoArithmetic.eobjs/native/dune__exe__Test_PeanoArithmetic.cmx -c -impl test/test_PeanoArithmetic.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.PeanoArithmetic.objs/byte -I lib/.PeanoArithmetic.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/PeanoArithmetic.cmxa lib/.PeanoArithmetic.objs/native/peanoArithmetic.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_PeanoArithmetic.exe test/.test_PeanoArithmetic.eobjs/native/dune__exe__Test_PeanoArithmetic.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/PeanoArithmetic.cmxs lib/PeanoArithmetic.cmxa)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/PeanoArithmetic.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

@@ -1,0 +1,4 @@
+(executable
+ (public_name PeanoArithmetic)
+ (name main)
+ (libraries PeanoArithmetic))
