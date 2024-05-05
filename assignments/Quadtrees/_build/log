@@ -1,0 +1,36 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/th3g3ntl3man/.cache/dune/db
+# Workspace root:
+# /home/th3g3ntl3man/Documents/ocaml/OCaml-advanture/assignments/Quadtrees
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/th3g3ntl3man/Documents/ocaml/OCaml-advanture/assignments/Quadtrees/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_fa3b4c_output
+# Promoting "_build/default/Quadtrees.opam" to "Quadtrees.opam"
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.Quadtrees.objs/byte -no-alias-deps -opaque -o lib/.Quadtrees.objs/byte/quadtrees.cmo -c -impl lib/quadtrees.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_Quadtrees.eobjs/byte -no-alias-deps -opaque -o test/.test_Quadtrees.eobjs/byte/dune__exe__Test_Quadtrees.cmi -c -intf test/test_Quadtrees.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/Quadtrees.cma lib/.Quadtrees.objs/byte/quadtrees.cmo)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.Quadtrees.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.Quadtrees.objs/byte -I lib/.Quadtrees.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.Quadtrees.objs/native/quadtrees.cmx -c -impl lib/quadtrees.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_Quadtrees.eobjs/byte -I test/.test_Quadtrees.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_Quadtrees.eobjs/native/dune__exe__Test_Quadtrees.cmx -c -impl test/test_Quadtrees.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.Quadtrees.objs/byte -I lib/.Quadtrees.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_Quadtrees.exe test/.test_Quadtrees.eobjs/native/dune__exe__Test_Quadtrees.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/Quadtrees.cmxa lib/.Quadtrees.objs/native/quadtrees.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/Quadtrees.cmxs lib/Quadtrees.cmxa)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/Quadtrees.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

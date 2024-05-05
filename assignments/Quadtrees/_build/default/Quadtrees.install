@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/Quadtrees/META"
+  "_build/install/default/lib/Quadtrees/dune-package"
+  "_build/install/default/lib/Quadtrees/opam"
+]
+bin: [
+  "_build/install/default/bin/Quadtrees"
+]
