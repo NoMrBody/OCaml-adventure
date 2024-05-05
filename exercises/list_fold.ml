@@ -37,5 +37,5 @@ let to_set lst =
   | h::t -> h = el || present t el
 in List.fold_left (fun acc x -> if present acc x then acc else x::acc) [] lst
 (* note that the output will be in reversed order, 
-   because we are adding elements in the begining of the list *)
+   because of 'x::acc' elements are placed at the begining of the accumulator list *)
 (* if you don't want so, you can write acc@[x] after the 'else' *)
