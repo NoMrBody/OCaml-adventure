@@ -30,3 +30,12 @@ let convert_to_st lst =
 let filter predicate lst = 
   List.fold_left (fun acc x -> if predicate x then acc @ [x] else acc) [] lst
   
+(* function that converts list into set *)
+let to_set lst = 
+  let rec present lst el = match lst with
+  | [] -> false
+  | h::t -> h = el || present t el
+in List.fold_left (fun acc x -> if present acc x then acc else x::acc) [] lst
+(* note that the output will be in reversed order, 
+   because we are adding elements in the begining of the list *)
+(* if you don't want so, you can write acc@[x] after the 'else' *)
