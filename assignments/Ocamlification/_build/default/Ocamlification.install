@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/Ocamlification/META"
+  "_build/install/default/lib/Ocamlification/dune-package"
+  "_build/install/default/lib/Ocamlification/opam"
+]
+bin: [
+  "_build/install/default/bin/Ocamlification"
+]
