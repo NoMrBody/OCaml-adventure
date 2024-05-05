@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/GeometryUtil/META"
+  "_build/install/default/lib/GeometryUtil/dune-package"
+  "_build/install/default/lib/GeometryUtil/opam"
+]
+bin: [
+  "_build/install/default/bin/GeometryUtil"
+]
