@@ -1,5 +1,4 @@
 # OCamlfication
-**foo**  
 Consider the following function foo implemented in an imperative programming language:
 
 ```C++
