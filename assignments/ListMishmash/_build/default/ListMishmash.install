@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/ListMishmash/META"
+  "_build/install/default/lib/ListMishmash/dune-package"
+  "_build/install/default/lib/ListMishmash/opam"
+]
+bin: [
+  "_build/install/default/bin/ListMishmash"
+]

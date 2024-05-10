@@ -1,0 +1,4 @@
+(executable
+ (public_name ListMishmash)
+ (name main)
+ (libraries ListMishmash))
