@@ -1,7 +1,7 @@
 # OCamlfication
 Consider the following function foo implemented in an imperative programming language:
 
-```C++
+```java
 int foo(int x, int y, bool b) {
     if(x > y) {
         int t = x;
