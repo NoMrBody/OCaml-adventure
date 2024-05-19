@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/BinSearchTrees/META"
+  "_build/install/default/lib/BinSearchTrees/dune-package"
+  "_build/install/default/lib/BinSearchTrees/opam"
+]
+bin: [
+  "_build/install/default/bin/BinSearchTrees"
+]
