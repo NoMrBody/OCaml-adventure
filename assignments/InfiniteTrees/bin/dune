@@ -1,0 +1,4 @@
+(executable
+ (public_name InfiniteTrees)
+ (name main)
+ (libraries InfiniteTrees))

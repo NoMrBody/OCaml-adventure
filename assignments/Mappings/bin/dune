@@ -1,0 +1,4 @@
+(executable
+ (public_name Mappings)
+ (name main)
+ (libraries Mappings))

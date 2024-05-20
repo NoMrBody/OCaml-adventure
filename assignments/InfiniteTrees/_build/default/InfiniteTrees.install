@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/InfiniteTrees/META"
+  "_build/install/default/lib/InfiniteTrees/dune-package"
+  "_build/install/default/lib/InfiniteTrees/opam"
+]
+bin: [
+  "_build/install/default/bin/InfiniteTrees"
+]

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/Mappings/META"
+  "_build/install/default/lib/Mappings/dune-package"
+  "_build/install/default/lib/Mappings/opam"
+]
+bin: [
+  "_build/install/default/bin/Mappings"
+]
