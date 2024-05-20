@@ -13,7 +13,8 @@ let center s = match s with
   (average x_lb x_ur, average y_lb y_ur) 
 
 (* actually, this function doesn't modify the position of the object *)
-(* after calling the move function new object is created on the desired position, yet the position of the initial object is left unchanged *)
+(* after calling the move function new object is created on the desired position, 
+ yet the position of the initial object is left unchanged *)
 (*I wrote this just for fun :) for fun X[ *)
 let move obj (dx : float) (dy : float ) = match obj with
 | Circle {center; radius} -> Circle {center = (fst center +. dx, fst center +. dy); radius}

@@ -10,7 +10,7 @@ let get m x = m x ;;
 
 let put m k v = fun x -> if x = k then v else m x
 
-let f = put (fun x-> failwith "no key exists") 1 2
+let f = put (fun _x-> failwith "no key exists") 1 2
 let f = put f 2 3
 let f = put f 3 4
 

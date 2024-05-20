@@ -5,12 +5,12 @@ let sum_list lst =
 
 (* compute the product of all numbers in list *)
 let prod_list lst = 
-  List.fold_left (fun acc x -> acc * x) 0 lst
+  List.fold_left (fun acc x -> acc * x) 1 lst
 
 
 (* find the max element in the list *)
 let max_list lst = 
-  List.fold_left (fun min_int x -> if x > min_int then x else min_int) min_int lst
+  List.fold_left (fun acc x -> if x > acc then x else acc) min_int lst
 
 
   (* reverse the list *)
