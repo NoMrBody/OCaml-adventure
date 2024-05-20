@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/LazyLists/META"
+  "_build/install/default/lib/LazyLists/dune-package"
+  "_build/install/default/lib/LazyLists/opam"
+]
+bin: [
+  "_build/install/default/bin/LazyLists"
+]

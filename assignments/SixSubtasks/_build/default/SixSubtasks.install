@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/SixSubtasks/META"
+  "_build/install/default/lib/SixSubtasks/dune-package"
+  "_build/install/default/lib/SixSubtasks/opam"
+]
+bin: [
+  "_build/install/default/bin/SixSubtasks"
+]

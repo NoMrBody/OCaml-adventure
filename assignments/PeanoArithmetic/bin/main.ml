@@ -1,4 +1,5 @@
 type nat = Zero | Succ of nat
+
 let rec int_to_nat x = match x with
 | 0 -> Zero
 | _ -> Succ(int_to_nat(x-1))
@@ -23,11 +24,9 @@ let rec mul x y = match x with
 
 let rec power x y = match y with
 | Zero -> Succ(Zero)
-| Succ(n) -> mul(add n y) x   
+| Succ(n) -> mul(power n y) x   
 
 
 let rec leq x y = match x, y with 
 | Succ(x), Succ(y) -> leq x y
 | _ -> x=Zero
-
-

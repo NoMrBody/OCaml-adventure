@@ -1,6 +1,6 @@
 let rec fold_left f a l = match l with
-| [] -> a
-| h::t -> fold_left f (f a h) t;; 
+  | [] -> a
+  | h::t -> fold_left f (f a h) t;; 
 
 (* f1 >> length*)
 fold_left (fun a _ -> a+1) (0) [1;2;3];;
