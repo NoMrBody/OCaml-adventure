@@ -10,7 +10,7 @@ define polymorphic lazy (infinite) binary trees. Instead of storing a left and r
 Implement the following functions for infinite tree construction:
 
 1. `layer_tree : int -> int ltree`  
-    $\texttt{layer\\_tree}\enspace r$ constructs an infinite tree where all nodes of the $n$th layer store the value $r+n$. We consider the root as layer $0$, so the root stores value $r$.
+    $\texttt{layer\\_tree}\enspace r$ constructs an infinite tree where all nodes of the nth layer store the value $r+n$. We consider the root as layer $0$, so the root stores value $r$.
 2. `interval_tree : float -> float -> (float * float) ltree`  
     $\texttt{interval\\_tree}\enspace l_0\enspace h_0$ constructs a tree where the left and right child of every node with interval $(l,h)$ store the intervals $(l, \frac{l+h}{2})$ and $(\frac{l+h}{2}, h)$, respectively. The root stores the interval $(l_0​,h_0)$ passed as the function's arguments.
 3. `rational_tree : int -> int -> (int * int) ltree`  
