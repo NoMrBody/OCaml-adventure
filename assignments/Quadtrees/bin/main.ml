@@ -14,10 +14,10 @@ let rec insert (px, py) qtree=
     match qnode with 
       | NoPoint -> Point (px, py)
       | QNode (nn, np, pn, pp) -> (match (px<xmid, py<ymid) with
-          | true, true -> QNode(impl(x1, y1, xmid, ymid) (px, py) nn, np, pn, pp)
-          | true, false -> QNode(nn, impl(x1, ymid, xmid, y2)(px, py)np, pn, pp)
-          | false, true -> QNode(nn, np, impl(xmid, y1, x2, ymid)(px, py)pn, pp)
-          | false, false -> QNode(nn, np, pn, impl(xmid, ymid, x2, y2)(px, py)pp))
+        | true, true -> QNode(impl(x1, y1, xmid, ymid) (px, py) nn, np, pn, pp)
+        | true, false -> QNode(nn, impl(x1, ymid, xmid, y2)(px, py)np, pn, pp)
+        | false, true -> QNode(nn, np, impl(xmid, y1, x2, ymid)(px, py)pn, pp)
+        | false, false -> QNode(nn, np, pn, impl(xmid, ymid, x2, y2)(px, py)pp))
       | Point (pxp, pyp) -> if ((px, py)=(pxp, pyp)) then Point(px, py) 
         else impl(x1, y1, x2, y2)(px, py)(impl(x1, y1, x2, y2)(pxp, pyp)(QNode(NoPoint, NoPoint, NoPoint, NoPoint)))
   in impl (0, 0, qtree.width, qtree.height) (px, py) qtree.root
