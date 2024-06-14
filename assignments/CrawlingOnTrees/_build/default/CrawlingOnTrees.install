@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/CrawlingOnTrees/META"
+  "_build/install/default/lib/CrawlingOnTrees/dune-package"
+  "_build/install/default/lib/CrawlingOnTrees/opam"
+]
+bin: [
+  "_build/install/default/bin/CrawlingOnTrees"
+]

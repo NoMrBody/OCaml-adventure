@@ -1,0 +1,36 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/th3g3ntl3man/.cache/dune/db
+# Workspace root:
+# /home/th3g3ntl3man/Documents/ocaml/OCaml-adventure/assignments/CrawlingOnTrees
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/th3g3ntl3man/Documents/ocaml/OCaml-adventure/assignments/CrawlingOnTrees/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_134baa_output
+# Promoting "_build/default/CrawlingOnTrees.opam" to "CrawlingOnTrees.opam"
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.CrawlingOnTrees.objs/byte -no-alias-deps -opaque -o lib/.CrawlingOnTrees.objs/byte/crawlingOnTrees.cmo -c -impl lib/crawlingOnTrees.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_CrawlingOnTrees.eobjs/byte -no-alias-deps -opaque -o test/.test_CrawlingOnTrees.eobjs/byte/dune__exe__Test_CrawlingOnTrees.cmi -c -intf test/test_CrawlingOnTrees.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/CrawlingOnTrees.cma lib/.CrawlingOnTrees.objs/byte/crawlingOnTrees.cmo)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.CrawlingOnTrees.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.CrawlingOnTrees.objs/byte -I lib/.CrawlingOnTrees.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.CrawlingOnTrees.objs/native/crawlingOnTrees.cmx -c -impl lib/crawlingOnTrees.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_CrawlingOnTrees.eobjs/byte -I test/.test_CrawlingOnTrees.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_CrawlingOnTrees.eobjs/native/dune__exe__Test_CrawlingOnTrees.cmx -c -impl test/test_CrawlingOnTrees.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.CrawlingOnTrees.objs/byte -I lib/.CrawlingOnTrees.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_CrawlingOnTrees.exe test/.test_CrawlingOnTrees.eobjs/native/dune__exe__Test_CrawlingOnTrees.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/CrawlingOnTrees.cmxa lib/.CrawlingOnTrees.objs/native/crawlingOnTrees.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/CrawlingOnTrees.cmxs lib/CrawlingOnTrees.cmxa)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/CrawlingOnTrees.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
