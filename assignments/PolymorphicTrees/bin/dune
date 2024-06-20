@@ -1,0 +1,4 @@
+(executable
+ (public_name PolymorphicTrees)
+ (name main)
+ (libraries PolymorphicTrees))

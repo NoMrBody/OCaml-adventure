@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/PolymorphicTrees/META"
+  "_build/install/default/lib/PolymorphicTrees/dune-package"
+  "_build/install/default/lib/PolymorphicTrees/opam"
+]
+bin: [
+  "_build/install/default/bin/PolymorphicTrees"
+]
