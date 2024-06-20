@@ -26,7 +26,7 @@ let rec remove_max tr = match tr with
   | Node(v, l, r) -> match remove_max r with
     | v', r' -> v', Node(v, l, r')
 
-(*  *)
+
 let rec remove el tr = match tr with
   | Leaf -> Leaf
   | Node(v, l, r) -> 
