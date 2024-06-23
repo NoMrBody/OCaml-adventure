@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/IndexedOneTwoTree/META"
+  "_build/install/default/lib/IndexedOneTwoTree/dune-package"
+  "_build/install/default/lib/IndexedOneTwoTree/opam"
+]
+bin: [
+  "_build/install/default/bin/IndexedOneTwoTree"
+]
