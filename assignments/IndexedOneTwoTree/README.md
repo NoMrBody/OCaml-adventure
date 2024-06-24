@@ -11,9 +11,9 @@ type 'a tree =
   | One of int * 'a tree
   | Two of int * int * 'a tree * 'a tree
 
-    Leaf holds a single value.
-    One holds an integer representing the size of the subtree and a single subtree.
-    Two holds two integers representing the sizes of the left and right subtrees, respectively, and two subtrees.
+Leaf holds a single value.
+One holds an integer representing the size of the subtree and a  single subtree.
+Two holds two integers representing the sizes of the left and right subtrees, respectively, and two subtrees.
 
 Example Tree
 
