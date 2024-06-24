@@ -76,16 +76,30 @@ val insert : 'a tree -> int -> 'a -> 'a tree
 ```
 #### Example:
 ```ocaml
-insert tr 2 "z" = Two (5, 1, 
+insert tr 1 "f" = Two (5, 1, 
                        Two (3, 2, 
-                            Two (1, 1, 
+                            Two (1, 2, 
                                  Leaf "a", 
-                                 Leaf "z"), 
+                                 Two(1,1,
+                                     Leaf "f",
+                                     Leaf "b")), 
                             Two (1, 1, 
                                  Leaf "b", 
                                  Leaf "d")
                        ), 
                        One (1, Leaf "e"))
+```
+```
+                    Two (5, 1)
+                  /            \
+           Two (3, 2)        One (1)
+         /         \             |
+    Two (1, 2)  Two (1, 1)    Leaf "e"
+   /       \          /    \
+Leaf "a" Two (1, 1) Leaf "c" Leaf "d"
+          /      \
+     Leaf "f" Leaf "b"
+
 ```
 
 ### 4. remove: The remove function removes the ith element from the tree.
