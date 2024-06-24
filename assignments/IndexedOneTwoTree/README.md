@@ -10,13 +10,13 @@ type 'a tree =
   | Leaf of 'a
   | One of int * 'a tree
   | Two of int * int * 'a tree * 'a tree
+```
+Leaf holds a single value.
+One holds an integer representing the size of the subtree and a single subtree.
+Two holds two integers representing the sizes of the left and right subtrees, respectively, and two subtrees.
 
-    Leaf holds a single value.
-    One holds an integer representing the size of the subtree and a single subtree.
-    Two holds two integers representing the sizes of the left and right subtrees, respectively, and two subtrees.
-
-Example Tree
-
+#### Example Tree:
+```ocaml
 let tr = Two (4, 1,
               Two (2, 2,
                    Two (1, 1, 
@@ -28,7 +28,7 @@ let tr = Two (4, 1,
               ),
               One (1, Leaf "e"))
 ```
-This tree can be visualized as follows:
+#### This tree can be visualized as follows:
 ```
                     Two (4, 1)
                   /            \
