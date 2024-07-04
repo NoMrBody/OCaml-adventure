@@ -50,12 +50,13 @@ module SetRing (D : FiniteRing) : Ring with type t = D.t list = struct
   let one = D.elems
   let add l1 l2 = List.fold_left (fun a h -> if List.exists (fun x -> D.compare x h = 0) a then a else h::a) l1 l2
   let mul l1 l2 = List.fold_left (fun a h -> if List.exists (fun x -> D.compare x h = 0) l1 then h::a else a) [] l2
-  let compare l1 l2 = 
-  let rec compare_aux a b = match a, b with
-    | [], [] -> 0
-    | [], _ -> -1
-    | _, [] -> 1
-    | x::xs, y::ys -> let c = D.compare x y in if c = 0 then compare_aux xs ys else c
-  in compare_aux (List.sort_uniq D.compare l1) (List.sort_uniq D.compare l2)
+  let compare a b = 
+    let a = List.sort D.compare a in
+    let b = List.sort D.compare b in
+    let rec impl l1 l2 = match l1, l2 with
+      | [],_ | _,[] -> (List.length l1) - (List.length l2)
+      | x::xs, y::ys -> let c =D.compare x y in
+      if c <> 0 then c else impl xs ys 
+  in impl a b
   let to_string l = List.fold_left (fun a h -> D.to_string h ^ " " ^ a) "" l
 end
